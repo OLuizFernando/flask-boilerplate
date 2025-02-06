@@ -1,0 +1,25 @@
+{% extends 'layout.html' %} {% block title %} Register {% endblock %} {% block content %}
+
+<main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+  <h1 class="mb-5"><strong>Register</strong></h1>
+  <form action="/register" method="post">
+    <div class="mb-3">
+      <label for="usernameInput" class="form-label">Username</label>
+      <input required type="text" class="form-control" name="usernameInput" id="usernameInput" />
+    </div>
+    <div class="mb-3">
+      <label for="passwordInput" class="form-label">Password</label>
+      <input required type="password" class="form-control" name="passwordInput" id="passwordInput" />
+    </div>
+    <div class="mb-5">
+      <label for="confirmPasswordInput" class="form-label">Confirm password</label>
+      <input required type="password" class="form-control" name="confirmPasswordInput" id="confirmPasswordInput" />
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <button type="submit" class="btn btn-primary w-100 mb-2" id="registerButton">Register</button>
+      <p class="text-secondary mb-0">Already have an account? <a class="link-primary" href="/login">Log in here</a></p>
+    </div>
+  </form>
+</main>
+
+{% endblock %}

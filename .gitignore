@@ -1,0 +1,11 @@
+# Virtual environment and cache  
+venv  
+__pycache__  
+
+# Vercel build folder (should always be ignored)  
+.vercel  
+
+# === REMOVE COMMENTS BELOW IF NEEDED ===  
+# vercel.json  
+# .env  
+

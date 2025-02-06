@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} {% block title %} Log In {% endblock %} {% block content %}
+
+<main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+  <h1 class="mb-5"><strong>Log In</strong></h1>
+  <form action="/login" method="post">
+    <div class="mb-3">
+      <label for="usernameInput" class="form-label">Username</label>
+      <input required type="text" class="form-control" name="usernameInput" id="usernameInput" />
+    </div>
+    <div class="mb-5">
+      <label for="passwordInput" class="form-label">Password</label>
+      <input required type="password" class="form-control" name="passwordInput" id="passwordInput" />
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <button type="submit" class="btn btn-primary w-100 mb-2" id="loginButton">Log in</button>
+      <p class="text-secondary mb-0">Don't have an account? <a class="link-primary" href="/register">Register here</a></p>
+      <p class="text-secondary">Or you can also <a class="link-primary" href="/tester-login">log in as tester</a></p>
+    </div>
+  </form>
+</main>
+
+{% endblock %}
