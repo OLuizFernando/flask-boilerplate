@@ -6,6 +6,8 @@ The boilerplate uses **Flask** along with **Postgres** (via `psycopg2`), **Boots
 
 These technologies are entirely optional and can be customized or replaced as needed for your project.
 
+🔗 **Live Demo:** [flask-boilerplate.vercel.app](https://flask-boilerplate.vercel.app)
+
 ## Features
 
 - **Flask** for web development
