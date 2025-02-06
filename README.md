@@ -8,8 +8,6 @@ These technologies are entirely optional and can be customized or replaced as ne
 
 ## Features
 
-## Features
-
 - **Flask** for web development
 - Optional **Postgres** support with `psycopg2` for **database integration**
 - Responsive design with **Bootstrap**
